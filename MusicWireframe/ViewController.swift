@@ -35,9 +35,24 @@ class ViewController: UIViewController {
             view?.alpha = 0.0
         }
     }
-    
 
-    
-    
+    @IBAction func playPauseButtonTapped() {
+        isPlaying.toggle()
+        
+        if isPlaying {
+            UIView.animate(withDuration: 0.8,
+                           delay: 0,
+                           usingSpringWithDamping: 0.6,
+                           initialSpringVelocity: 0.1,
+                           options: [],
+                           animations: {
+                self.albumImageView.transform = CGAffineTransform.identity
+            }, completion: nil)
+        } else {
+            UIView.animate(withDuration: 0.5) {
+                self.albumImageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            }
+        }
+    }
 }
 
