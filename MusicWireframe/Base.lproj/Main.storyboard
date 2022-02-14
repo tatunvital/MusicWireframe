@@ -54,6 +54,10 @@
                                         <state key="normal" image="backward.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="3mf-VW-xAq"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oee-lp-LKm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtB-5A-fSu" userLabel="Play Pause Button">
                                         <rect key="frame" x="134.5" y="0.0" width="25" height="29.5"/>
@@ -67,6 +71,8 @@
                                         </state>
                                         <connections>
                                             <action selector="playPauseButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Un2-UO-z2A"/>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Yh3-Q8-4hh"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4p-La-7rW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4A-iE-8bU" userLabel="Forward Button">
@@ -76,6 +82,10 @@
                                         <state key="normal" image="forward.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="gmq-I4-WcQ"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFh-ab-CzC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

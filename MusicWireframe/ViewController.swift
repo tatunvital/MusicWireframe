@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         [reverseBackground, playPauseBackground, forwardBackground] .forEach {
             view in
             view?.layer.cornerRadius = view!.frame.height / 2
@@ -35,24 +35,71 @@ class ViewController: UIViewController {
             view?.alpha = 0.0
         }
     }
-
+    
     @IBAction func playPauseButtonTapped() {
         isPlaying.toggle()
         
         if isPlaying {
-            UIView.animate(withDuration: 0.8,
-                           delay: 0,
-                           usingSpringWithDamping: 0.6,
-                           initialSpringVelocity: 0.1,
-                           options: [],
-                           animations: {
-                self.albumImageView.transform = CGAffineTransform.identity
-            }, completion: nil)
+            UIView.animate(
+                withDuration: 0.8,
+                delay: 0,
+                usingSpringWithDamping: 0.6,
+                initialSpringVelocity: 0.1,
+                options: [],
+                animations: {
+                    self.albumImageView.transform = CGAffineTransform.identity
+                },
+                completion: nil)
         } else {
             UIView.animate(withDuration: 0.5) {
                 self.albumImageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
         }
     }
+    
+    @IBAction func touchedDown(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.3
+            sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
+        
+        
+    }
+    
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0
+            
+            buttonBackground.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+            sender.transform = CGAffineTransform.identity
+        } completion: { (_) in
+            buttonBackground.transform = CGAffineTransform.identity
+        }
+    }
+    
 }
 
