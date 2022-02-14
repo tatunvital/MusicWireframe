@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" secondItem="WNh-Lw-T5V" secondAttribute="height" multiplier="1:1" id="QWh-yP-DsK"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1px-wX-NZu">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1px-wX-NZu" userLabel="Stack Buttons">
                                 <rect key="frame" x="60" y="498" width="294" height="29.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-d9-bPU" userLabel="Reverse Button">
@@ -94,6 +94,15 @@
                             <constraint firstItem="bXo-dy-JPu" firstAttribute="centerY" secondItem="wtB-5A-fSu" secondAttribute="centerY" id="ygI-I9-1pn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="WNh-Lw-T5V" id="WIO-zV-1Xj"/>
+                        <outlet property="forwardBackground" destination="bdp-rE-Hcp" id="DJa-sL-F3G"/>
+                        <outlet property="forwardButton" destination="y4A-iE-8bU" id="N2C-67-EiH"/>
+                        <outlet property="playPauseBackground" destination="bXo-dy-JPu" id="ZjQ-zX-U6D"/>
+                        <outlet property="playPauseButton" destination="wtB-5A-fSu" id="4Xv-KU-mL2"/>
+                        <outlet property="reverseBackground" destination="0MI-FP-djo" id="NZt-s5-Fly"/>
+                        <outlet property="reverseButton" destination="Hvi-d9-bPU" id="Mqn-Ac-bgP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
