@@ -9,6 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isPlaying: Bool = true {
+        didSet {
+            playPauseButton.isSelected = isPlaying
+        }
+    }
+    
     @IBOutlet var reverseBackground: UIView!
     @IBOutlet var playPauseBackground: UIView!
     @IBOutlet var forwardBackground: UIView!
@@ -18,12 +24,20 @@ class ViewController: UIViewController {
     @IBOutlet var forwardButton: UIButton!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        [reverseBackground, playPauseBackground, forwardBackground] .forEach {
+            view in
+            view?.layer.cornerRadius = view!.frame.height / 2
+            view?.clipsToBounds = true
+            view?.alpha = 0.0
+        }
     }
+    
 
-
+    
+    
 }
 

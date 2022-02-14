@@ -16,42 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-Lw-T5V" userLabel="Album Image View">
-                                <rect key="frame" x="20" y="64" width="374" height="374"/>
-                                <color key="backgroundColor" red="0.78769788890000003" green="0.62422806070000003" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="WNh-Lw-T5V" secondAttribute="height" multiplier="1:1" id="QWh-yP-DsK"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1px-wX-NZu" userLabel="Stack Buttons">
-                                <rect key="frame" x="60" y="498" width="294" height="29.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-d9-bPU" userLabel="Reverse Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="29.5"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="backward.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtB-5A-fSu" userLabel="Play Pause Button">
-                                        <rect key="frame" x="134.5" y="0.0" width="25" height="29.5"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="play.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
-                                        </state>
-                                        <state key="selected" image="pause.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4A-iE-8bU" userLabel="Forward Button">
-                                        <rect key="frame" x="249.5" y="0.0" width="44.5" height="29.5"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="forward.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MI-FP-djo" userLabel="Reverse Background">
                                 <rect key="frame" x="53" y="483.5" width="59" height="59"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,6 +37,45 @@
                                     <constraint firstAttribute="width" secondItem="bdp-rE-Hcp" secondAttribute="height" multiplier="1:1" id="k9o-cK-dqH"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-Lw-T5V" userLabel="Album Image View">
+                                <rect key="frame" x="20" y="64" width="374" height="374"/>
+                                <color key="backgroundColor" red="0.78769788890000003" green="0.62422806070000003" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WNh-Lw-T5V" secondAttribute="height" multiplier="1:1" id="QWh-yP-DsK"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1px-wX-NZu" userLabel="Stack Buttons">
+                                <rect key="frame" x="60" y="498" width="294" height="29.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-d9-bPU" userLabel="Reverse Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="29.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="backward.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtB-5A-fSu" userLabel="Play Pause Button">
+                                        <rect key="frame" x="134.5" y="0.0" width="25" height="29.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="play.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <state key="selected" image="pause.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4A-iE-8bU" userLabel="Forward Button">
+                                        <rect key="frame" x="249.5" y="0.0" width="44.5" height="29.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="forward.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,15 +86,15 @@
                             <constraint firstItem="1px-wX-NZu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="I5b-Ze-SOb"/>
                             <constraint firstItem="WNh-Lw-T5V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="M4G-dZ-zGQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1px-wX-NZu" secondAttribute="trailing" constant="60" id="Qwg-JE-Isf"/>
+                            <constraint firstItem="wtB-5A-fSu" firstAttribute="centerX" secondItem="bXo-dy-JPu" secondAttribute="centerX" id="R2f-ja-DYd"/>
                             <constraint firstItem="1px-wX-NZu" firstAttribute="top" secondItem="WNh-Lw-T5V" secondAttribute="bottom" constant="60" id="WPZ-QA-4kP"/>
-                            <constraint firstItem="bXo-dy-JPu" firstAttribute="centerX" secondItem="wtB-5A-fSu" secondAttribute="centerX" id="Ycv-DX-wM9"/>
                             <constraint firstItem="0MI-FP-djo" firstAttribute="centerX" secondItem="Hvi-d9-bPU" secondAttribute="centerX" id="a4o-m9-1Lq"/>
+                            <constraint firstItem="wtB-5A-fSu" firstAttribute="centerY" secondItem="bXo-dy-JPu" secondAttribute="centerY" id="fl4-vF-n7j"/>
                             <constraint firstItem="bdp-rE-Hcp" firstAttribute="centerY" secondItem="y4A-iE-8bU" secondAttribute="centerY" id="gFJ-Q5-HnT"/>
                             <constraint firstItem="0MI-FP-djo" firstAttribute="height" secondItem="Hvi-d9-bPU" secondAttribute="height" multiplier="2" id="qes-e3-29f"/>
                             <constraint firstItem="WNh-Lw-T5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tgE-JO-SxA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WNh-Lw-T5V" secondAttribute="trailing" constant="20" id="v5L-Rh-SFT"/>
                             <constraint firstItem="0MI-FP-djo" firstAttribute="centerY" secondItem="Hvi-d9-bPU" secondAttribute="centerY" id="yei-LT-mPt"/>
-                            <constraint firstItem="bXo-dy-JPu" firstAttribute="centerY" secondItem="wtB-5A-fSu" secondAttribute="centerY" id="ygI-I9-1pn"/>
                         </constraints>
                     </view>
                     <connections>
