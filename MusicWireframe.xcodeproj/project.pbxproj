@@ -58,11 +58,11 @@
 			children = (
 				9620104327BA63E20060C980 /* AppDelegate.swift */,
 				9620104527BA63E20060C980 /* SceneDelegate.swift */,
+				9620104E27BA63E40060C980 /* LaunchScreen.storyboard */,
+				9620104C27BA63E40060C980 /* Assets.xcassets */,
+				9620105127BA63E40060C980 /* Info.plist */,
 				9620104727BA63E20060C980 /* ViewController.swift */,
 				9620104927BA63E20060C980 /* Main.storyboard */,
-				9620104C27BA63E40060C980 /* Assets.xcassets */,
-				9620104E27BA63E40060C980 /* LaunchScreen.storyboard */,
-				9620105127BA63E40060C980 /* Info.plist */,
 			);
 			path = MusicWireframe;
 			sourceTree = "<group>";
